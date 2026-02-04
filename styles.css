@@ -1,60 +1,75 @@
-/* ===== Page Styles ===== */
-body {
-    background-color: #767779;   /* background color */
-    color: #f9faff;              /* font color */
+/* RESET */
+* {
     margin: 0;
-    font-family: Arial, sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===== Header Styles ===== */
-#main-header {
-    background-color: #b9d8ff;   /* light blue */
-    border: 2px solid #8ab7ff;   /* soft border */
-    border-radius: 999px;        /* pill shape */
-    padding: 15px 20px;
-    width: 90%;
-    margin: 20px auto;
+/* HEADER BAR */
+.header {
+    width: 100%;
+    background: #0b0b0b;
+    position: relative;
 }
 
-#main-header .nav-container {
-    display: flex;
-    justify-content: center;
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-#main-header .nav-list {
+/* NAV LIST */
+.nav-list {
     list-style: none;
     display: flex;
-    gap: 40px;
-    padding: 0;
-    margin: 0;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#main-header .nav-list a {
-    text-decoration: none;
-    color: #000;                 /* black text */
-    font-weight: bold;
-    font-size: 16px;
-}
-
-#main-header .nav-list a:hover {
-    color: #ffffff;
-}
-
-/* ===== Header2 Styles ===== */
-.header2 {
+.nav-list li {
+    position: relative;
+    flex: 1;
     text-align: center;
-    padding: 50px 0;
 }
 
-.header2 h1 {
-    font-size: 60px;
-    margin: 0;
-    letter-spacing: 4px;
+/* NAV LINKS */
+.nav-list a {
+    display: block;
+    padding: 18px 0;
+    text-decoration: none;
+    color: #9fe0c3;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: background 0.3s;
 }
 
-#tagline {
-    font-size: 20px;
-    margin: 10px 0 0;
-    color: #f2f2f2;
+.nav-list a:hover {
+    background: #111;
 }
 
+/* DROPDOWN PANEL */
+.nav-list li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 260px;
+    height: 0;
+    background: #5fc2a1;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.nav-list li:hover::after {
+    height: 160px;
+    opacity: 1;
+}
+
+/* OPTIONAL TEXT INSIDE DROPDOWN */
+.nav-list li:hover::before {
+    content: "sub item 1\A sub ite
+}
