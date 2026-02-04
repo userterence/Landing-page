@@ -32,7 +32,7 @@
     text-align: center;
 }
 
-/* NAV LINKS */
+
 .nav-list a {
     display: block;
     padding: 18px 0;
@@ -47,21 +47,7 @@
     background: #111;
 }
 
-/* DROPDOWN PANEL */
-.nav-list li::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 100%;
-    transform: translateX(-50%);
-    width: 260px;
-    height: 0;
-    background: #5fc2a1;
-    border-radius: 4px;
-    opacity: 0;
-    transition: all 0.3s ease;
-    pointer-events: none;
-}
+
 
 /* SHOW DROPDOWN ON HOVER */
 .nav-list li:hover::after {
