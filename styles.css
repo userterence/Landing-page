@@ -1,0 +1,60 @@
+/* ===== Page Styles ===== */
+body {
+    background-color: #767779;   /* background color */
+    color: #f9faff;              /* font color */
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Header Styles ===== */
+#main-header {
+    background-color: #b9d8ff;   /* light blue */
+    border: 2px solid #8ab7ff;   /* soft border */
+    border-radius: 999px;        /* pill shape */
+    padding: 15px 20px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+#main-header .nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+#main-header .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+#main-header .nav-list a {
+    text-decoration: none;
+    color: #000;                 /* black text */
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#main-header .nav-list a:hover {
+    color: #ffffff;
+}
+
+/* ===== Header2 Styles ===== */
+.header2 {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header2 h1 {
+    font-size: 60px;
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+#tagline {
+    font-size: 20px;
+    margin: 10px 0 0;
+    color: #f2f2f2;
+}
+
