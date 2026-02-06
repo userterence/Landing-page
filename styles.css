@@ -157,7 +157,8 @@ body {
 .products h2 {
     font-size: 32px;
     margin-bottom: 10px;
-    font-display: block;
+    font-display:block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
