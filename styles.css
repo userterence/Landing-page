@@ -139,6 +139,11 @@ html, body {
 #sports-text {
     font-size: 13px;
     margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+    font-display:block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+>>>>>>> a98cf4157a52bad21b4eedae72f84e1f556b8e4e
 }
 
 .product-grid {
